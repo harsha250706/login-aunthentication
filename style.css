@@ -1,0 +1,99 @@
+:root {
+  --bg-main: #1a1a1a;
+  --card-bg: #232323;
+  --accent: #13aef0;
+  --input-bg: #353535;
+  --border-radius: 12px;
+  --input-radius: 7px;
+  --shadow: 0 8px 24px rgba(20, 40, 60, 0.32);
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-main);
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+.login-card {
+  background-color: #636262;
+  padding: 2.5rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-card h2 {
+  margin-top: 0;
+  margin-bottom: 1.3rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #e0e0e0;
+  margin-bottom: 0.2rem;
+}
+input[type="email"],
+input[type="password"] {
+  padding: 0.7rem;
+  border-radius: var(--input-radius);
+  border: none;
+  background: var(--input-bg);
+  color: #fff;
+  font-size: 1rem;
+  transition: box-shadow 0.2s;
+  outline: none;
+}
+input:focus {
+  box-shadow: 0 0 0 2px var(--accent);
+  background: #2d2d2d;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.7rem;
+}
+.forgot-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: text-decoration 0.18s;
+}
+.forgot-link:hover {
+  text-decoration: underline;
+}
+button[type="submit"] {
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 7px;
+  padding: 0.9rem 0;
+  cursor: pointer;
+  transition: background 0.16s;
+  margin-top: 0.3rem;
+  box-shadow: 0 2px 8px rgba(19, 174, 240, 0.13);
+}
+button[type="submit"]:hover {
+  background: #0f87bd;
+}
